@@ -1,0 +1,953 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 15, 0, 15 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 7.5, 0, 7.5 )
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.25, 0.25, 0.25 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 5, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -1.57704e-07, 0.251022, -0.967981, 4.08967e-08, 0.967981, 0.251022, 1, -3.55271e-15, -1.62921e-07, -13.3206, 2.95685, 0.157318 )
+fov = 81.6814
+
+[node name="Cube_Top" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 2.75, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Top"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Top"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_1" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 2.25, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_1"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_1"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 2.25, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_2"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_3" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 2.25, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_3"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_3"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_1" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.75, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_1"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_1"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.75, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_2"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_3" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.75, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_3"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_3"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_4" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.75, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_4"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_4"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_5" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.75, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_5"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_5"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_1" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.25, -1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_1"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_1"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.25, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_2"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_3" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.25, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_3"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_3"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_4" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.25, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_4"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_4"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_5" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.25, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_5"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_5"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_6" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.25, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_6"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_6"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_7" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 1.251, 1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_7"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_7"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_1" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, -2 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_1"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_1"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, -1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_2"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_3" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_3"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_3"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_4" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_4"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_4"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_5" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_5"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_5"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_6" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_6"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_6"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_7" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_7"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_7"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_8" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, 1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_8"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_8"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_9" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.75, 2 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_9"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_9"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_1" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, -2.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_1"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_1"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, -2 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_2"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_3" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, -1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_3"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_3"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_4" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_4"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_4"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_5" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_5"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_5"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_6" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_6"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_6"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_7" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_7"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_7"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_8" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_8"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_8"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_9" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, 1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_9"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_9"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_10" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, 2 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_10"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_10"]
+shape = SubResource( 4 )
+
+[node name="Cube_Bottom_11" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.765, 0.25, 2.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Bottom_11"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Bottom_11"]
+shape = SubResource( 4 )
+
+[node name="Cube_Top4" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 2.24697, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Top4"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Top4"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_10" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.74697, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_10"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_10"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_11" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.74697, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_11"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_11"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_12" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.74697, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_12"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_12"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_16" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.24697, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_16"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_16"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_17" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.24697, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_17"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_17"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_18" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.24697, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_18"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_18"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_19" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.24697, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_19"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_19"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_20" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 1.24697, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_20"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_20"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_15" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.746971, -1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_15"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_15"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_16" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.746971, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_16"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_16"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_17" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.746971, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_17"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_17"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_18" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.746971, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_18"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_18"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_19" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.746971, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_19"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_19"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_20" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.746971, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_20"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_20"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_21" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.747971, 1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_21"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_21"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_10" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, -2 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_10"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_10"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_11" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, -1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_11"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_11"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_12" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_12"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_12"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_13" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_13"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_13"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_14" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_14"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_14"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_15" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_15"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_15"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_16" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_16"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_16"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_17" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, 1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_17"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_17"]
+shape = SubResource( 4 )
+
+[node name="Cube_Second_18" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.632, 0.246971, 2 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Second_18"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Second_18"]
+shape = SubResource( 4 )
+
+[node name="Cube_Top2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 1.75387, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Top2"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Top2"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_4" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 1.25387, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_4"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_4"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_5" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 1.25387, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_5"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_5"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fifth_6" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 1.25387, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fifth_6"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fifth_6"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_6" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.753871, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_6"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_6"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_7" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.753871, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_7"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_7"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_8" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.753871, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_8"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_8"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_9" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.753871, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_9"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_9"]
+shape = SubResource( 4 )
+
+[node name="Cube_Fourth_10" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.753871, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Fourth_10"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Fourth_10"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_8" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.253871, -1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_8"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_8"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_9" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.253871, -1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_9"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_9"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_10" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.253871, -0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_10"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_10"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_11" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.253871, 0 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_11"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_11"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_12" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.253871, 0.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_12"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_12"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_13" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.253871, 1 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_13"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_13"]
+shape = SubResource( 4 )
+
+[node name="Cube_Third_14" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343954, 0.254871, 1.5 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_Third_14"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_Third_14"]
+shape = SubResource( 4 )

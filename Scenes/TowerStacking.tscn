@@ -1,0 +1,6194 @@
+[gd_scene load_steps=5 format=2]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 1, 1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 10, 0.001, 10 )
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.25, 0.25, 0.25 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="StaticBody" type="StaticBody" parent="."]
+transform = Transform( 60, 0, 0, 0, 1, 0, 0, 0, 40, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 2 )
+
+[node name="RigidBody41" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.263276, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody41"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody41"]
+shape = SubResource( 4 )
+
+[node name="RigidBody42" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.263276, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody42"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody42"]
+shape = SubResource( 4 )
+
+[node name="RigidBody43" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.263276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody43"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody43"]
+shape = SubResource( 4 )
+
+[node name="RigidBody44" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.263276, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody44"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody44"]
+shape = SubResource( 4 )
+
+[node name="RigidBody45" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.263276, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody45"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody45"]
+shape = SubResource( 4 )
+
+[node name="RigidBody46" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.263276, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody46"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody46"]
+shape = SubResource( 4 )
+
+[node name="RigidBody47" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 0.263276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody47"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody47"]
+shape = SubResource( 4 )
+
+[node name="RigidBody48" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 0.263276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody48"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody48"]
+shape = SubResource( 4 )
+
+[node name="RigidBody49" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.263276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody49"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody49"]
+shape = SubResource( 4 )
+
+[node name="RigidBody50" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 0.263276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody50"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody50"]
+shape = SubResource( 4 )
+
+[node name="RigidBody51" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.263276, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody51"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody51"]
+shape = SubResource( 4 )
+
+[node name="RigidBody52" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.263276, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody52"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody52"]
+shape = SubResource( 4 )
+
+[node name="RigidBody53" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.263276, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody53"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody53"]
+shape = SubResource( 4 )
+
+[node name="RigidBody54" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.263276, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody54"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody54"]
+shape = SubResource( 4 )
+
+[node name="RigidBody55" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.263276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody55"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody55"]
+shape = SubResource( 4 )
+
+[node name="RigidBody56" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 0.263276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody56"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody56"]
+shape = SubResource( 4 )
+
+[node name="RigidBody57" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 0.263276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody57"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody57"]
+shape = SubResource( 4 )
+
+[node name="RigidBody58" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 0.263276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody58"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody58"]
+shape = SubResource( 4 )
+
+[node name="RigidBody59" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 0.263276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody59"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody59"]
+shape = SubResource( 4 )
+
+[node name="RigidBody60" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 0.263276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody60"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody60"]
+shape = SubResource( 4 )
+
+[node name="RigidBody61" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.763276, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody61"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody61"]
+shape = SubResource( 4 )
+
+[node name="RigidBody62" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.763276, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody62"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody62"]
+shape = SubResource( 4 )
+
+[node name="RigidBody63" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.763276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody63"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody63"]
+shape = SubResource( 4 )
+
+[node name="RigidBody64" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.763276, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody64"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody64"]
+shape = SubResource( 4 )
+
+[node name="RigidBody65" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.763276, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody65"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody65"]
+shape = SubResource( 4 )
+
+[node name="RigidBody66" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 0.763276, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody66"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody66"]
+shape = SubResource( 4 )
+
+[node name="RigidBody67" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 0.763276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody67"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody67"]
+shape = SubResource( 4 )
+
+[node name="RigidBody68" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 0.763276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody68"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody68"]
+shape = SubResource( 4 )
+
+[node name="RigidBody69" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.763276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody69"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody69"]
+shape = SubResource( 4 )
+
+[node name="RigidBody70" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 0.763276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody70"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody70"]
+shape = SubResource( 4 )
+
+[node name="RigidBody71" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.763276, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody71"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody71"]
+shape = SubResource( 4 )
+
+[node name="RigidBody72" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.763276, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody72"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody72"]
+shape = SubResource( 4 )
+
+[node name="RigidBody73" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.763276, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody73"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody73"]
+shape = SubResource( 4 )
+
+[node name="RigidBody74" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.763276, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody74"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody74"]
+shape = SubResource( 4 )
+
+[node name="RigidBody75" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 0.763276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody75"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody75"]
+shape = SubResource( 4 )
+
+[node name="RigidBody76" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 0.763276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody76"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody76"]
+shape = SubResource( 4 )
+
+[node name="RigidBody77" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 0.763276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody77"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody77"]
+shape = SubResource( 4 )
+
+[node name="RigidBody78" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 0.763276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody78"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody78"]
+shape = SubResource( 4 )
+
+[node name="RigidBody79" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 0.763276, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody79"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody79"]
+shape = SubResource( 4 )
+
+[node name="RigidBody80" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 0.763276, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody80"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody80"]
+shape = SubResource( 4 )
+
+[node name="RigidBody81" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.26328, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody81"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody81"]
+shape = SubResource( 4 )
+
+[node name="RigidBody82" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.26328, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody82"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody82"]
+shape = SubResource( 4 )
+
+[node name="RigidBody83" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.26328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody83"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody83"]
+shape = SubResource( 4 )
+
+[node name="RigidBody84" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.26328, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody84"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody84"]
+shape = SubResource( 4 )
+
+[node name="RigidBody85" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.26328, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody85"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody85"]
+shape = SubResource( 4 )
+
+[node name="RigidBody86" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.26328, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody86"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody86"]
+shape = SubResource( 4 )
+
+[node name="RigidBody87" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 1.26328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody87"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody87"]
+shape = SubResource( 4 )
+
+[node name="RigidBody88" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 1.26328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody88"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody88"]
+shape = SubResource( 4 )
+
+[node name="RigidBody89" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.26328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody89"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody89"]
+shape = SubResource( 4 )
+
+[node name="RigidBody90" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 1.26328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody90"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody90"]
+shape = SubResource( 4 )
+
+[node name="RigidBody91" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.26328, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody91"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody91"]
+shape = SubResource( 4 )
+
+[node name="RigidBody92" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.26328, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody92"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody92"]
+shape = SubResource( 4 )
+
+[node name="RigidBody93" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.26328, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody93"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody93"]
+shape = SubResource( 4 )
+
+[node name="RigidBody94" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.26328, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody94"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody94"]
+shape = SubResource( 4 )
+
+[node name="RigidBody95" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.26328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody95"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody95"]
+shape = SubResource( 4 )
+
+[node name="RigidBody96" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 1.26328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody96"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody96"]
+shape = SubResource( 4 )
+
+[node name="RigidBody97" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 1.26328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody97"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody97"]
+shape = SubResource( 4 )
+
+[node name="RigidBody98" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 1.26328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody98"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody98"]
+shape = SubResource( 4 )
+
+[node name="RigidBody99" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 1.26328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody99"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody99"]
+shape = SubResource( 4 )
+
+[node name="RigidBody100" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 1.26328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody100"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody100"]
+shape = SubResource( 4 )
+
+[node name="RigidBody101" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.76328, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody101"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody101"]
+shape = SubResource( 4 )
+
+[node name="RigidBody102" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.76328, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody102"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody102"]
+shape = SubResource( 4 )
+
+[node name="RigidBody103" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.76328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody103"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody103"]
+shape = SubResource( 4 )
+
+[node name="RigidBody104" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.76328, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody104"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody104"]
+shape = SubResource( 4 )
+
+[node name="RigidBody105" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.76328, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody105"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody105"]
+shape = SubResource( 4 )
+
+[node name="RigidBody106" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5392, 1.76328, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody106"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody106"]
+shape = SubResource( 4 )
+
+[node name="RigidBody107" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 1.76328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody107"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody107"]
+shape = SubResource( 4 )
+
+[node name="RigidBody108" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 1.76328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody108"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody108"]
+shape = SubResource( 4 )
+
+[node name="RigidBody109" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.76328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody109"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody109"]
+shape = SubResource( 4 )
+
+[node name="RigidBody110" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 1.76328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody110"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody110"]
+shape = SubResource( 4 )
+
+[node name="RigidBody111" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.76328, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody111"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody111"]
+shape = SubResource( 4 )
+
+[node name="RigidBody112" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.76328, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody112"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody112"]
+shape = SubResource( 4 )
+
+[node name="RigidBody113" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.76328, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody113"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody113"]
+shape = SubResource( 4 )
+
+[node name="RigidBody114" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.76328, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody114"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody114"]
+shape = SubResource( 4 )
+
+[node name="RigidBody115" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0392, 1.76328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody115"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody115"]
+shape = SubResource( 4 )
+
+[node name="RigidBody116" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0392, 1.76328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody116"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody116"]
+shape = SubResource( 4 )
+
+[node name="RigidBody117" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5392, 1.76328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody117"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody117"]
+shape = SubResource( 4 )
+
+[node name="RigidBody118" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5392, 1.76328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody118"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody118"]
+shape = SubResource( 4 )
+
+[node name="RigidBody119" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 1.76328, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody119"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody119"]
+shape = SubResource( 4 )
+
+[node name="RigidBody120" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0392, 1.76328, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody120"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody120"]
+shape = SubResource( 4 )
+
+[node name="RigidBody201" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.25, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody201"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody201"]
+shape = SubResource( 4 )
+
+[node name="RigidBody202" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody202"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody202"]
+shape = SubResource( 4 )
+
+[node name="RigidBody203" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody203"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody203"]
+shape = SubResource( 4 )
+
+[node name="RigidBody204" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody204"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody204"]
+shape = SubResource( 4 )
+
+[node name="RigidBody205" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody205"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody205"]
+shape = SubResource( 4 )
+
+[node name="RigidBody206" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody206"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody206"]
+shape = SubResource( 4 )
+
+[node name="RigidBody207" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody207"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody207"]
+shape = SubResource( 4 )
+
+[node name="RigidBody208" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody208"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody208"]
+shape = SubResource( 4 )
+
+[node name="RigidBody209" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody209"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody209"]
+shape = SubResource( 4 )
+
+[node name="RigidBody210" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody210"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody210"]
+shape = SubResource( 4 )
+
+[node name="RigidBody211" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody211"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody211"]
+shape = SubResource( 4 )
+
+[node name="RigidBody212" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody212"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody212"]
+shape = SubResource( 4 )
+
+[node name="RigidBody213" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody213"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody213"]
+shape = SubResource( 4 )
+
+[node name="RigidBody214" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody214"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody214"]
+shape = SubResource( 4 )
+
+[node name="RigidBody215" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody215"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody215"]
+shape = SubResource( 4 )
+
+[node name="RigidBody216" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody216"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody216"]
+shape = SubResource( 4 )
+
+[node name="RigidBody217" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody217"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody217"]
+shape = SubResource( 4 )
+
+[node name="RigidBody218" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody218"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody218"]
+shape = SubResource( 4 )
+
+[node name="RigidBody219" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody219"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody219"]
+shape = SubResource( 4 )
+
+[node name="RigidBody220" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody220"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody220"]
+shape = SubResource( 4 )
+
+[node name="RigidBody221" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody221"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody221"]
+shape = SubResource( 4 )
+
+[node name="RigidBody222" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody222"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody222"]
+shape = SubResource( 4 )
+
+[node name="RigidBody223" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody223"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody223"]
+shape = SubResource( 4 )
+
+[node name="RigidBody224" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody224"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody224"]
+shape = SubResource( 4 )
+
+[node name="RigidBody225" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody225"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody225"]
+shape = SubResource( 4 )
+
+[node name="RigidBody226" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 0.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody226"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody226"]
+shape = SubResource( 4 )
+
+[node name="RigidBody227" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody227"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody227"]
+shape = SubResource( 4 )
+
+[node name="RigidBody228" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody228"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody228"]
+shape = SubResource( 4 )
+
+[node name="RigidBody229" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody229"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody229"]
+shape = SubResource( 4 )
+
+[node name="RigidBody230" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody230"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody230"]
+shape = SubResource( 4 )
+
+[node name="RigidBody231" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody231"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody231"]
+shape = SubResource( 4 )
+
+[node name="RigidBody232" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody232"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody232"]
+shape = SubResource( 4 )
+
+[node name="RigidBody233" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody233"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody233"]
+shape = SubResource( 4 )
+
+[node name="RigidBody234" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody234"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody234"]
+shape = SubResource( 4 )
+
+[node name="RigidBody235" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody235"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody235"]
+shape = SubResource( 4 )
+
+[node name="RigidBody236" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody236"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody236"]
+shape = SubResource( 4 )
+
+[node name="RigidBody237" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody237"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody237"]
+shape = SubResource( 4 )
+
+[node name="RigidBody238" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody238"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody238"]
+shape = SubResource( 4 )
+
+[node name="RigidBody239" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody239"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody239"]
+shape = SubResource( 4 )
+
+[node name="RigidBody240" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody240"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody240"]
+shape = SubResource( 4 )
+
+[node name="RigidBody241" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.25, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody241"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody241"]
+shape = SubResource( 4 )
+
+[node name="RigidBody242" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody242"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody242"]
+shape = SubResource( 4 )
+
+[node name="RigidBody243" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody243"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody243"]
+shape = SubResource( 4 )
+
+[node name="RigidBody244" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody244"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody244"]
+shape = SubResource( 4 )
+
+[node name="RigidBody245" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody245"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody245"]
+shape = SubResource( 4 )
+
+[node name="RigidBody246" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody246"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody246"]
+shape = SubResource( 4 )
+
+[node name="RigidBody247" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody247"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody247"]
+shape = SubResource( 4 )
+
+[node name="RigidBody248" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody248"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody248"]
+shape = SubResource( 4 )
+
+[node name="RigidBody249" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody249"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody249"]
+shape = SubResource( 4 )
+
+[node name="RigidBody250" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody250"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody250"]
+shape = SubResource( 4 )
+
+[node name="RigidBody251" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody251"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody251"]
+shape = SubResource( 4 )
+
+[node name="RigidBody252" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody252"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody252"]
+shape = SubResource( 4 )
+
+[node name="RigidBody253" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody253"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody253"]
+shape = SubResource( 4 )
+
+[node name="RigidBody254" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody254"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody254"]
+shape = SubResource( 4 )
+
+[node name="RigidBody255" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody255"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody255"]
+shape = SubResource( 4 )
+
+[node name="RigidBody256" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody256"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody256"]
+shape = SubResource( 4 )
+
+[node name="RigidBody257" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody257"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody257"]
+shape = SubResource( 4 )
+
+[node name="RigidBody258" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody258"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody258"]
+shape = SubResource( 4 )
+
+[node name="RigidBody259" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody259"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody259"]
+shape = SubResource( 4 )
+
+[node name="RigidBody260" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody260"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody260"]
+shape = SubResource( 4 )
+
+[node name="RigidBody261" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody261"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody261"]
+shape = SubResource( 4 )
+
+[node name="RigidBody262" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody262"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody262"]
+shape = SubResource( 4 )
+
+[node name="RigidBody263" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody263"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody263"]
+shape = SubResource( 4 )
+
+[node name="RigidBody264" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody264"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody264"]
+shape = SubResource( 4 )
+
+[node name="RigidBody265" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody265"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody265"]
+shape = SubResource( 4 )
+
+[node name="RigidBody266" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 1.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody266"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody266"]
+shape = SubResource( 4 )
+
+[node name="RigidBody267" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody267"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody267"]
+shape = SubResource( 4 )
+
+[node name="RigidBody268" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody268"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody268"]
+shape = SubResource( 4 )
+
+[node name="RigidBody269" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody269"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody269"]
+shape = SubResource( 4 )
+
+[node name="RigidBody270" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody270"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody270"]
+shape = SubResource( 4 )
+
+[node name="RigidBody271" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody271"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody271"]
+shape = SubResource( 4 )
+
+[node name="RigidBody272" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody272"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody272"]
+shape = SubResource( 4 )
+
+[node name="RigidBody273" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody273"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody273"]
+shape = SubResource( 4 )
+
+[node name="RigidBody274" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody274"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody274"]
+shape = SubResource( 4 )
+
+[node name="RigidBody275" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody275"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody275"]
+shape = SubResource( 4 )
+
+[node name="RigidBody276" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody276"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody276"]
+shape = SubResource( 4 )
+
+[node name="RigidBody277" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody277"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody277"]
+shape = SubResource( 4 )
+
+[node name="RigidBody278" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody278"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody278"]
+shape = SubResource( 4 )
+
+[node name="RigidBody279" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody279"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody279"]
+shape = SubResource( 4 )
+
+[node name="RigidBody280" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody280"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody280"]
+shape = SubResource( 4 )
+
+[node name="RigidBody281" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.25, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody281"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody281"]
+shape = SubResource( 4 )
+
+[node name="RigidBody282" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody282"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody282"]
+shape = SubResource( 4 )
+
+[node name="RigidBody283" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody283"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody283"]
+shape = SubResource( 4 )
+
+[node name="RigidBody284" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody284"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody284"]
+shape = SubResource( 4 )
+
+[node name="RigidBody285" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody285"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody285"]
+shape = SubResource( 4 )
+
+[node name="RigidBody286" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody286"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody286"]
+shape = SubResource( 4 )
+
+[node name="RigidBody287" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody287"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody287"]
+shape = SubResource( 4 )
+
+[node name="RigidBody288" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody288"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody288"]
+shape = SubResource( 4 )
+
+[node name="RigidBody289" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody289"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody289"]
+shape = SubResource( 4 )
+
+[node name="RigidBody290" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody290"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody290"]
+shape = SubResource( 4 )
+
+[node name="RigidBody291" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody291"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody291"]
+shape = SubResource( 4 )
+
+[node name="RigidBody292" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody292"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody292"]
+shape = SubResource( 4 )
+
+[node name="RigidBody293" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody293"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody293"]
+shape = SubResource( 4 )
+
+[node name="RigidBody294" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody294"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody294"]
+shape = SubResource( 4 )
+
+[node name="RigidBody295" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody295"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody295"]
+shape = SubResource( 4 )
+
+[node name="RigidBody296" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody296"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody296"]
+shape = SubResource( 4 )
+
+[node name="RigidBody297" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody297"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody297"]
+shape = SubResource( 4 )
+
+[node name="RigidBody298" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody298"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody298"]
+shape = SubResource( 4 )
+
+[node name="RigidBody299" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody299"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody299"]
+shape = SubResource( 4 )
+
+[node name="RigidBody300" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody300"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody300"]
+shape = SubResource( 4 )
+
+[node name="RigidBody301" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody301"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody301"]
+shape = SubResource( 4 )
+
+[node name="RigidBody302" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody302"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody302"]
+shape = SubResource( 4 )
+
+[node name="RigidBody303" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody303"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody303"]
+shape = SubResource( 4 )
+
+[node name="RigidBody304" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody304"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody304"]
+shape = SubResource( 4 )
+
+[node name="RigidBody305" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody305"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody305"]
+shape = SubResource( 4 )
+
+[node name="RigidBody306" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 2.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody306"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody306"]
+shape = SubResource( 4 )
+
+[node name="RigidBody307" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody307"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody307"]
+shape = SubResource( 4 )
+
+[node name="RigidBody308" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody308"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody308"]
+shape = SubResource( 4 )
+
+[node name="RigidBody309" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody309"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody309"]
+shape = SubResource( 4 )
+
+[node name="RigidBody310" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody310"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody310"]
+shape = SubResource( 4 )
+
+[node name="RigidBody311" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody311"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody311"]
+shape = SubResource( 4 )
+
+[node name="RigidBody312" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody312"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody312"]
+shape = SubResource( 4 )
+
+[node name="RigidBody313" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody313"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody313"]
+shape = SubResource( 4 )
+
+[node name="RigidBody314" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody314"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody314"]
+shape = SubResource( 4 )
+
+[node name="RigidBody315" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody315"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody315"]
+shape = SubResource( 4 )
+
+[node name="RigidBody316" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody316"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody316"]
+shape = SubResource( 4 )
+
+[node name="RigidBody317" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody317"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody317"]
+shape = SubResource( 4 )
+
+[node name="RigidBody318" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody318"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody318"]
+shape = SubResource( 4 )
+
+[node name="RigidBody319" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody319"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody319"]
+shape = SubResource( 4 )
+
+[node name="RigidBody320" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody320"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody320"]
+shape = SubResource( 4 )
+
+[node name="RigidBody321" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody321"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody321"]
+shape = SubResource( 4 )
+
+[node name="RigidBody322" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody322"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody322"]
+shape = SubResource( 4 )
+
+[node name="RigidBody323" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody323"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody323"]
+shape = SubResource( 4 )
+
+[node name="RigidBody324" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody324"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody324"]
+shape = SubResource( 4 )
+
+[node name="RigidBody325" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody325"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody325"]
+shape = SubResource( 4 )
+
+[node name="RigidBody326" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody326"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody326"]
+shape = SubResource( 4 )
+
+[node name="RigidBody327" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody327"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody327"]
+shape = SubResource( 4 )
+
+[node name="RigidBody328" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody328"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody328"]
+shape = SubResource( 4 )
+
+[node name="RigidBody329" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody329"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody329"]
+shape = SubResource( 4 )
+
+[node name="RigidBody330" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody330"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody330"]
+shape = SubResource( 4 )
+
+[node name="RigidBody331" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody331"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody331"]
+shape = SubResource( 4 )
+
+[node name="RigidBody332" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody332"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody332"]
+shape = SubResource( 4 )
+
+[node name="RigidBody333" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody333"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody333"]
+shape = SubResource( 4 )
+
+[node name="RigidBody334" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody334"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody334"]
+shape = SubResource( 4 )
+
+[node name="RigidBody335" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody335"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody335"]
+shape = SubResource( 4 )
+
+[node name="RigidBody336" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody336"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody336"]
+shape = SubResource( 4 )
+
+[node name="RigidBody337" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody337"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody337"]
+shape = SubResource( 4 )
+
+[node name="RigidBody338" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody338"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody338"]
+shape = SubResource( 4 )
+
+[node name="RigidBody339" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody339"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody339"]
+shape = SubResource( 4 )
+
+[node name="RigidBody340" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody340"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody340"]
+shape = SubResource( 4 )
+
+[node name="RigidBody341" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody341"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody341"]
+shape = SubResource( 4 )
+
+[node name="RigidBody342" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody342"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody342"]
+shape = SubResource( 4 )
+
+[node name="RigidBody343" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody343"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody343"]
+shape = SubResource( 4 )
+
+[node name="RigidBody344" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody344"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody344"]
+shape = SubResource( 4 )
+
+[node name="RigidBody345" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody345"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody345"]
+shape = SubResource( 4 )
+
+[node name="RigidBody346" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48483, 3.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody346"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody346"]
+shape = SubResource( 4 )
+
+[node name="RigidBody347" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody347"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody347"]
+shape = SubResource( 4 )
+
+[node name="RigidBody348" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody348"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody348"]
+shape = SubResource( 4 )
+
+[node name="RigidBody349" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody349"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody349"]
+shape = SubResource( 4 )
+
+[node name="RigidBody350" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody350"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody350"]
+shape = SubResource( 4 )
+
+[node name="RigidBody351" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody351"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody351"]
+shape = SubResource( 4 )
+
+[node name="RigidBody352" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody352"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody352"]
+shape = SubResource( 4 )
+
+[node name="RigidBody353" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody353"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody353"]
+shape = SubResource( 4 )
+
+[node name="RigidBody354" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody354"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody354"]
+shape = SubResource( 4 )
+
+[node name="RigidBody355" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.01517, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody355"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody355"]
+shape = SubResource( 4 )
+
+[node name="RigidBody356" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.01517, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody356"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody356"]
+shape = SubResource( 4 )
+
+[node name="RigidBody357" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.51517, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody357"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody357"]
+shape = SubResource( 4 )
+
+[node name="RigidBody358" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51517, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody358"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody358"]
+shape = SubResource( 4 )
+
+[node name="RigidBody359" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody359"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody359"]
+shape = SubResource( 4 )
+
+[node name="RigidBody360" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0151696, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody360"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody360"]
+shape = SubResource( 4 )
+
+[node name="RigidBody404" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody404"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody404"]
+shape = SubResource( 4 )
+
+[node name="RigidBody405" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody405"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody405"]
+shape = SubResource( 4 )
+
+[node name="RigidBody406" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody406"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody406"]
+shape = SubResource( 4 )
+
+[node name="RigidBody407" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody407"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody407"]
+shape = SubResource( 4 )
+
+[node name="RigidBody408" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody408"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody408"]
+shape = SubResource( 4 )
+
+[node name="RigidBody409" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody409"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody409"]
+shape = SubResource( 4 )
+
+[node name="RigidBody410" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody410"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody410"]
+shape = SubResource( 4 )
+
+[node name="RigidBody411" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody411"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody411"]
+shape = SubResource( 4 )
+
+[node name="RigidBody412" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 0.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody412"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody412"]
+shape = SubResource( 4 )
+
+[node name="RigidBody413" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody413"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody413"]
+shape = SubResource( 4 )
+
+[node name="RigidBody414" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody414"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody414"]
+shape = SubResource( 4 )
+
+[node name="RigidBody415" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody415"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody415"]
+shape = SubResource( 4 )
+
+[node name="RigidBody416" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody416"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody416"]
+shape = SubResource( 4 )
+
+[node name="RigidBody417" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody417"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody417"]
+shape = SubResource( 4 )
+
+[node name="RigidBody418" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody418"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody418"]
+shape = SubResource( 4 )
+
+[node name="RigidBody419" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody419"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody419"]
+shape = SubResource( 4 )
+
+[node name="RigidBody420" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody420"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody420"]
+shape = SubResource( 4 )
+
+[node name="RigidBody421" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody421"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody421"]
+shape = SubResource( 4 )
+
+[node name="RigidBody422" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody422"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody422"]
+shape = SubResource( 4 )
+
+[node name="RigidBody423" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody423"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody423"]
+shape = SubResource( 4 )
+
+[node name="RigidBody424" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody424"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody424"]
+shape = SubResource( 4 )
+
+[node name="RigidBody425" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody425"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody425"]
+shape = SubResource( 4 )
+
+[node name="RigidBody426" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 0.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody426"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody426"]
+shape = SubResource( 4 )
+
+[node name="RigidBody427" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody427"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody427"]
+shape = SubResource( 4 )
+
+[node name="RigidBody428" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody428"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody428"]
+shape = SubResource( 4 )
+
+[node name="RigidBody429" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody429"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody429"]
+shape = SubResource( 4 )
+
+[node name="RigidBody430" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody430"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody430"]
+shape = SubResource( 4 )
+
+[node name="RigidBody431" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody431"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody431"]
+shape = SubResource( 4 )
+
+[node name="RigidBody432" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody432"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody432"]
+shape = SubResource( 4 )
+
+[node name="RigidBody433" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody433"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody433"]
+shape = SubResource( 4 )
+
+[node name="RigidBody434" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody434"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody434"]
+shape = SubResource( 4 )
+
+[node name="RigidBody435" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody435"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody435"]
+shape = SubResource( 4 )
+
+[node name="RigidBody436" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody436"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody436"]
+shape = SubResource( 4 )
+
+[node name="RigidBody437" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody437"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody437"]
+shape = SubResource( 4 )
+
+[node name="RigidBody438" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody438"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody438"]
+shape = SubResource( 4 )
+
+[node name="RigidBody439" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 0.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody439"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody439"]
+shape = SubResource( 4 )
+
+[node name="RigidBody440" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 0.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody440"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody440"]
+shape = SubResource( 4 )
+
+[node name="RigidBody441" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.25, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody441"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody441"]
+shape = SubResource( 4 )
+
+[node name="RigidBody442" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody442"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody442"]
+shape = SubResource( 4 )
+
+[node name="RigidBody443" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody443"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody443"]
+shape = SubResource( 4 )
+
+[node name="RigidBody444" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody444"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody444"]
+shape = SubResource( 4 )
+
+[node name="RigidBody445" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody445"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody445"]
+shape = SubResource( 4 )
+
+[node name="RigidBody446" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody446"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody446"]
+shape = SubResource( 4 )
+
+[node name="RigidBody447" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody447"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody447"]
+shape = SubResource( 4 )
+
+[node name="RigidBody448" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody448"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody448"]
+shape = SubResource( 4 )
+
+[node name="RigidBody449" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody449"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody449"]
+shape = SubResource( 4 )
+
+[node name="RigidBody450" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody450"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody450"]
+shape = SubResource( 4 )
+
+[node name="RigidBody451" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody451"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody451"]
+shape = SubResource( 4 )
+
+[node name="RigidBody452" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody452"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody452"]
+shape = SubResource( 4 )
+
+[node name="RigidBody453" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody453"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody453"]
+shape = SubResource( 4 )
+
+[node name="RigidBody454" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody454"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody454"]
+shape = SubResource( 4 )
+
+[node name="RigidBody455" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody455"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody455"]
+shape = SubResource( 4 )
+
+[node name="RigidBody456" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody456"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody456"]
+shape = SubResource( 4 )
+
+[node name="RigidBody457" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody457"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody457"]
+shape = SubResource( 4 )
+
+[node name="RigidBody458" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody458"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody458"]
+shape = SubResource( 4 )
+
+[node name="RigidBody459" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 1.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody459"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody459"]
+shape = SubResource( 4 )
+
+[node name="RigidBody460" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 1.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody460"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody460"]
+shape = SubResource( 4 )
+
+[node name="RigidBody461" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody461"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody461"]
+shape = SubResource( 4 )
+
+[node name="RigidBody462" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody462"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody462"]
+shape = SubResource( 4 )
+
+[node name="RigidBody463" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody463"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody463"]
+shape = SubResource( 4 )
+
+[node name="RigidBody464" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody464"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody464"]
+shape = SubResource( 4 )
+
+[node name="RigidBody465" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody465"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody465"]
+shape = SubResource( 4 )
+
+[node name="RigidBody466" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 1.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody466"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody466"]
+shape = SubResource( 4 )
+
+[node name="RigidBody467" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody467"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody467"]
+shape = SubResource( 4 )
+
+[node name="RigidBody468" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody468"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody468"]
+shape = SubResource( 4 )
+
+[node name="RigidBody469" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody469"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody469"]
+shape = SubResource( 4 )
+
+[node name="RigidBody470" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody470"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody470"]
+shape = SubResource( 4 )
+
+[node name="RigidBody471" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody471"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody471"]
+shape = SubResource( 4 )
+
+[node name="RigidBody472" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody472"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody472"]
+shape = SubResource( 4 )
+
+[node name="RigidBody473" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody473"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody473"]
+shape = SubResource( 4 )
+
+[node name="RigidBody474" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody474"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody474"]
+shape = SubResource( 4 )
+
+[node name="RigidBody475" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody475"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody475"]
+shape = SubResource( 4 )
+
+[node name="RigidBody476" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody476"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody476"]
+shape = SubResource( 4 )
+
+[node name="RigidBody477" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody477"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody477"]
+shape = SubResource( 4 )
+
+[node name="RigidBody478" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody478"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody478"]
+shape = SubResource( 4 )
+
+[node name="RigidBody479" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 1.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody479"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody479"]
+shape = SubResource( 4 )
+
+[node name="RigidBody480" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 1.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody480"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody480"]
+shape = SubResource( 4 )
+
+[node name="RigidBody481" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.25, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody481"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody481"]
+shape = SubResource( 4 )
+
+[node name="RigidBody482" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody482"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody482"]
+shape = SubResource( 4 )
+
+[node name="RigidBody483" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody483"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody483"]
+shape = SubResource( 4 )
+
+[node name="RigidBody484" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody484"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody484"]
+shape = SubResource( 4 )
+
+[node name="RigidBody485" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody485"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody485"]
+shape = SubResource( 4 )
+
+[node name="RigidBody486" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody486"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody486"]
+shape = SubResource( 4 )
+
+[node name="RigidBody487" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody487"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody487"]
+shape = SubResource( 4 )
+
+[node name="RigidBody488" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody488"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody488"]
+shape = SubResource( 4 )
+
+[node name="RigidBody489" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody489"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody489"]
+shape = SubResource( 4 )
+
+[node name="RigidBody490" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody490"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody490"]
+shape = SubResource( 4 )
+
+[node name="RigidBody491" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody491"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody491"]
+shape = SubResource( 4 )
+
+[node name="RigidBody492" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody492"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody492"]
+shape = SubResource( 4 )
+
+[node name="RigidBody493" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody493"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody493"]
+shape = SubResource( 4 )
+
+[node name="RigidBody494" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody494"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody494"]
+shape = SubResource( 4 )
+
+[node name="RigidBody495" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody495"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody495"]
+shape = SubResource( 4 )
+
+[node name="RigidBody496" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody496"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody496"]
+shape = SubResource( 4 )
+
+[node name="RigidBody497" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody497"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody497"]
+shape = SubResource( 4 )
+
+[node name="RigidBody498" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody498"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody498"]
+shape = SubResource( 4 )
+
+[node name="RigidBody499" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 2.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody499"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody499"]
+shape = SubResource( 4 )
+
+[node name="RigidBody500" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 2.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody500"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody500"]
+shape = SubResource( 4 )
+
+[node name="RigidBody501" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody501"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody501"]
+shape = SubResource( 4 )
+
+[node name="RigidBody502" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody502"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody502"]
+shape = SubResource( 4 )
+
+[node name="RigidBody503" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody503"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody503"]
+shape = SubResource( 4 )
+
+[node name="RigidBody504" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody504"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody504"]
+shape = SubResource( 4 )
+
+[node name="RigidBody505" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody505"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody505"]
+shape = SubResource( 4 )
+
+[node name="RigidBody506" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 2.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody506"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody506"]
+shape = SubResource( 4 )
+
+[node name="RigidBody507" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody507"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody507"]
+shape = SubResource( 4 )
+
+[node name="RigidBody508" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody508"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody508"]
+shape = SubResource( 4 )
+
+[node name="RigidBody509" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody509"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody509"]
+shape = SubResource( 4 )
+
+[node name="RigidBody510" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody510"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody510"]
+shape = SubResource( 4 )
+
+[node name="RigidBody511" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody511"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody511"]
+shape = SubResource( 4 )
+
+[node name="RigidBody512" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody512"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody512"]
+shape = SubResource( 4 )
+
+[node name="RigidBody513" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody513"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody513"]
+shape = SubResource( 4 )
+
+[node name="RigidBody514" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody514"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody514"]
+shape = SubResource( 4 )
+
+[node name="RigidBody515" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody515"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody515"]
+shape = SubResource( 4 )
+
+[node name="RigidBody516" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody516"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody516"]
+shape = SubResource( 4 )
+
+[node name="RigidBody517" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody517"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody517"]
+shape = SubResource( 4 )
+
+[node name="RigidBody518" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody518"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody518"]
+shape = SubResource( 4 )
+
+[node name="RigidBody519" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 2.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody519"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody519"]
+shape = SubResource( 4 )
+
+[node name="RigidBody520" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 2.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody520"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody520"]
+shape = SubResource( 4 )
+
+[node name="RigidBody521" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody521"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody521"]
+shape = SubResource( 4 )
+
+[node name="RigidBody522" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody522"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody522"]
+shape = SubResource( 4 )
+
+[node name="RigidBody523" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody523"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody523"]
+shape = SubResource( 4 )
+
+[node name="RigidBody524" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody524"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody524"]
+shape = SubResource( 4 )
+
+[node name="RigidBody525" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody525"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody525"]
+shape = SubResource( 4 )
+
+[node name="RigidBody526" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody526"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody526"]
+shape = SubResource( 4 )
+
+[node name="RigidBody527" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody527"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody527"]
+shape = SubResource( 4 )
+
+[node name="RigidBody528" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody528"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody528"]
+shape = SubResource( 4 )
+
+[node name="RigidBody529" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody529"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody529"]
+shape = SubResource( 4 )
+
+[node name="RigidBody530" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody530"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody530"]
+shape = SubResource( 4 )
+
+[node name="RigidBody531" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody531"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody531"]
+shape = SubResource( 4 )
+
+[node name="RigidBody532" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody532"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody532"]
+shape = SubResource( 4 )
+
+[node name="RigidBody533" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody533"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody533"]
+shape = SubResource( 4 )
+
+[node name="RigidBody534" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody534"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody534"]
+shape = SubResource( 4 )
+
+[node name="RigidBody535" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody535"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody535"]
+shape = SubResource( 4 )
+
+[node name="RigidBody536" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody536"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody536"]
+shape = SubResource( 4 )
+
+[node name="RigidBody537" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody537"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody537"]
+shape = SubResource( 4 )
+
+[node name="RigidBody538" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody538"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody538"]
+shape = SubResource( 4 )
+
+[node name="RigidBody539" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 3.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody539"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody539"]
+shape = SubResource( 4 )
+
+[node name="RigidBody540" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 3.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody540"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody540"]
+shape = SubResource( 4 )
+
+[node name="RigidBody541" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody541"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody541"]
+shape = SubResource( 4 )
+
+[node name="RigidBody542" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody542"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody542"]
+shape = SubResource( 4 )
+
+[node name="RigidBody543" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody543"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody543"]
+shape = SubResource( 4 )
+
+[node name="RigidBody544" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody544"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody544"]
+shape = SubResource( 4 )
+
+[node name="RigidBody545" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody545"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody545"]
+shape = SubResource( 4 )
+
+[node name="RigidBody546" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 3.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody546"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody546"]
+shape = SubResource( 4 )
+
+[node name="RigidBody547" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody547"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody547"]
+shape = SubResource( 4 )
+
+[node name="RigidBody548" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody548"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody548"]
+shape = SubResource( 4 )
+
+[node name="RigidBody549" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody549"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody549"]
+shape = SubResource( 4 )
+
+[node name="RigidBody550" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody550"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody550"]
+shape = SubResource( 4 )
+
+[node name="RigidBody551" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody551"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody551"]
+shape = SubResource( 4 )
+
+[node name="RigidBody552" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody552"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody552"]
+shape = SubResource( 4 )
+
+[node name="RigidBody553" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody553"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody553"]
+shape = SubResource( 4 )
+
+[node name="RigidBody554" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody554"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody554"]
+shape = SubResource( 4 )
+
+[node name="RigidBody555" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody555"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody555"]
+shape = SubResource( 4 )
+
+[node name="RigidBody556" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody556"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody556"]
+shape = SubResource( 4 )
+
+[node name="RigidBody557" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody557"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody557"]
+shape = SubResource( 4 )
+
+[node name="RigidBody558" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody558"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody558"]
+shape = SubResource( 4 )
+
+[node name="RigidBody559" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 3.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody559"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody559"]
+shape = SubResource( 4 )
+
+[node name="RigidBody560" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 3.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody560"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody560"]
+shape = SubResource( 4 )
+
+[node name="RigidBody561" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.25, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody561"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody561"]
+shape = SubResource( 4 )
+
+[node name="RigidBody562" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.25, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody562"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody562"]
+shape = SubResource( 4 )
+
+[node name="RigidBody563" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody563"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody563"]
+shape = SubResource( 4 )
+
+[node name="RigidBody564" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody564"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody564"]
+shape = SubResource( 4 )
+
+[node name="RigidBody565" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.25, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody565"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody565"]
+shape = SubResource( 4 )
+
+[node name="RigidBody566" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.25, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody566"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody566"]
+shape = SubResource( 4 )
+
+[node name="RigidBody567" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 4.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody567"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody567"]
+shape = SubResource( 4 )
+
+[node name="RigidBody568" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 4.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody568"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody568"]
+shape = SubResource( 4 )
+
+[node name="RigidBody569" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody569"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody569"]
+shape = SubResource( 4 )
+
+[node name="RigidBody570" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 4.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody570"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody570"]
+shape = SubResource( 4 )
+
+[node name="RigidBody571" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.25, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody571"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody571"]
+shape = SubResource( 4 )
+
+[node name="RigidBody572" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.25, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody572"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody572"]
+shape = SubResource( 4 )
+
+[node name="RigidBody573" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.25, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody573"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody573"]
+shape = SubResource( 4 )
+
+[node name="RigidBody574" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.25, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody574"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody574"]
+shape = SubResource( 4 )
+
+[node name="RigidBody575" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody575"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody575"]
+shape = SubResource( 4 )
+
+[node name="RigidBody576" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 4.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody576"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody576"]
+shape = SubResource( 4 )
+
+[node name="RigidBody577" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 4.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody577"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody577"]
+shape = SubResource( 4 )
+
+[node name="RigidBody578" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 4.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody578"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody578"]
+shape = SubResource( 4 )
+
+[node name="RigidBody579" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 4.25, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody579"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody579"]
+shape = SubResource( 4 )
+
+[node name="RigidBody580" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 4.25, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody580"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody580"]
+shape = SubResource( 4 )
+
+[node name="RigidBody581" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.75, -0.21725 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody581"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody581"]
+shape = SubResource( 4 )
+
+[node name="RigidBody582" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.75, 0.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody582"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody582"]
+shape = SubResource( 4 )
+
+[node name="RigidBody583" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody583"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody583"]
+shape = SubResource( 4 )
+
+[node name="RigidBody584" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody584"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody584"]
+shape = SubResource( 4 )
+
+[node name="RigidBody585" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.75, 0.78275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody585"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody585"]
+shape = SubResource( 4 )
+
+[node name="RigidBody586" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.0315, 4.75, 1.28275 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody586"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody586"]
+shape = SubResource( 4 )
+
+[node name="RigidBody587" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 4.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody587"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody587"]
+shape = SubResource( 4 )
+
+[node name="RigidBody588" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 4.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody588"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody588"]
+shape = SubResource( 4 )
+
+[node name="RigidBody589" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody589"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody589"]
+shape = SubResource( 4 )
+
+[node name="RigidBody590" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 4.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody590"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody590"]
+shape = SubResource( 4 )
+
+[node name="RigidBody591" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.75, 0.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody591"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody591"]
+shape = SubResource( 4 )
+
+[node name="RigidBody592" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.75, -0.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody592"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody592"]
+shape = SubResource( 4 )
+
+[node name="RigidBody593" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.75, 0.783 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody593"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.7895e-05 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody593"]
+shape = SubResource( 4 )
+
+[node name="RigidBody594" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.75, -0.717 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody594"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody594"]
+shape = SubResource( 4 )
+
+[node name="RigidBody595" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.53152, 4.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody595"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody595"]
+shape = SubResource( 4 )
+
+[node name="RigidBody596" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5315, 4.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody596"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody596"]
+shape = SubResource( 4 )
+
+[node name="RigidBody597" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0315, 4.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody597"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody597"]
+shape = SubResource( 4 )
+
+[node name="RigidBody598" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.0315, 4.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody598"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody598"]
+shape = SubResource( 4 )
+
+[node name="RigidBody599" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 4.75, -1.217 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody599"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody599"]
+shape = SubResource( 4 )
+
+[node name="RigidBody600" type="RigidBody" parent="." groups=[
+"TowerCubes",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5315, 4.75, 1.283 )
+linear_damp = 0.01
+angular_damp = 0.05
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody600"]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody600"]
+shape = SubResource( 4 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.636765, 0.771058, 0, -0.771058, 0.636765, 0.22246, 12.5509, 13.8144 )

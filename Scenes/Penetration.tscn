@@ -1,0 +1,407 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scripts/PenetrationSpawn.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/TextToFile.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Materials/Colours/Cube_Color.tres" type="Material" id=3]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 10, -0.1, 10 )
+
+[sub_resource type="Skin" id=2]
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 5, 0.05, 5 )
+
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="BoxShape" id=5]
+extents = Vector3( 0.25, 0.25, 0.25 )
+
+[sub_resource type="CubeMesh" id=6]
+size = Vector3( 0.5, 0.5, 0.5 )
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.25, 0.25, 0.25 )
+
+[node name="Spatial" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Floor" type="StaticBody" parent="."]
+transform = Transform( 20, 0, 0, 0, 1, 0, 0, 0, 20, 0, 0, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0 )
+mesh = SubResource( 1 )
+skin = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0 )
+shape = SubResource( 3 )
+
+[node name="CubeDynamic_Second_2_Bottom" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0.403 )
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_2_Bottom"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_2_Bottom"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_second_2_Top" type="RigidBody" parent="."]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0.5, 0.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_second_2_Top"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_second_2_Top"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_1_Bottom" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 0.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_1_Bottom"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_1_Bottom"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_1_Top" type="RigidBody" parent="."]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -2, 0.625, 0.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_1_Top"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_1_Top"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_3_Bottom" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.25, 0.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_3_Bottom"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_3_Bottom"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_3_Top" type="RigidBody" parent="."]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 2, 0.375, 0.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_3_Top"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_3_Top"]
+shape = SubResource( 5 )
+
+[node name="Cube_First_2_Top" type="RigidBody" parent="."]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 0, 0.5, -3.59652 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_First_2_Top"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_First_2_Top"]
+shape = SubResource( 5 )
+
+[node name="Cube_First_3_Top" type="RigidBody" parent="."]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 2, 0.375, -3.59652 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_First_3_Top"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_First_3_Top"]
+shape = SubResource( 5 )
+
+[node name="CubeStatic_First_2_Bottom" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, -3.59652 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeStatic_First_2_Bottom"]
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeStatic_First_2_Bottom"]
+shape = SubResource( 7 )
+
+[node name="CubeDynamic_First_1_Top" type="RigidBody" parent="."]
+transform = Transform( 0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -2, 0.625, -3.59652 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_First_1_Top"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_First_1_Top"]
+shape = SubResource( 5 )
+
+[node name="CubeStatic_First_1_Bottom" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, -3.59652 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeStatic_First_1_Bottom"]
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeStatic_First_1_Bottom"]
+shape = SubResource( 7 )
+
+[node name="CubeStatic_First_3_Bottom" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.25, -3.59679 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeStatic_First_3_Bottom"]
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeStatic_First_3_Bottom"]
+shape = SubResource( 7 )
+
+[node name="CubeDynamic_Second_2_Bottom2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 9.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_2_Bottom2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_2_Bottom2"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_second_2_Top2" type="RigidBody" parent="."]
+transform = Transform( 0.707107, -0.5, -0.5, 0, 0.707107, -0.707107, 0.707107, 0.5, 0.5, 0, 0.5, 9.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_second_2_Top2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_second_2_Top2"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_1_Bottom2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 9.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_1_Bottom2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_1_Bottom2"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_1_Top2" type="RigidBody" parent="."]
+transform = Transform( 0.707107, -0.5, -0.5, 0, 0.707107, -0.707107, 0.707107, 0.5, 0.5, -2, 0.625, 9.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_1_Top2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_1_Top2"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_3_Bottom2" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.25, 9.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_3_Bottom2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_3_Bottom2"]
+shape = SubResource( 5 )
+
+[node name="CubeDynamic_Second_3_Top2" type="RigidBody" parent="."]
+transform = Transform( 0.707107, -0.5, -0.5, 0, 0.707107, -0.707107, 0.707107, 0.5, 0.5, 2, 0.375, 9.403 )
+continuous_cd = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_Second_3_Top2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_Second_3_Top2"]
+shape = SubResource( 5 )
+
+[node name="Cube_First_2_Top2" type="RigidBody" parent="."]
+transform = Transform( 0.707107, -0.5, -0.5, 0, 0.707107, -0.707107, 0.707107, 0.5, 0.5, 0, 0.5, 5.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_First_2_Top2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_First_2_Top2"]
+shape = SubResource( 5 )
+
+[node name="Cube_First_3_Top2" type="RigidBody" parent="."]
+transform = Transform( 0.707107, -0.5, -0.5, 0, 0.707107, -0.707107, 0.707107, 0.5, 0.5, 2, 0.375, 5.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Cube_First_3_Top2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube_First_3_Top2"]
+shape = SubResource( 5 )
+
+[node name="CubeStatic_First_2_Bottom2" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 5.403 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeStatic_First_2_Bottom2"]
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeStatic_First_2_Bottom2"]
+shape = SubResource( 7 )
+
+[node name="CubeDynamic_First_1_Top2" type="RigidBody" parent="."]
+transform = Transform( 0.707107, -0.5, -0.5, 0, 0.707107, -0.707107, 0.707107, 0.5, 0.5, -2, 0.625, 5.403 )
+continuous_cd = true
+contacts_reported = 1000
+contact_monitor = true
+linear_damp = 0.01
+angular_damp = 0.05
+script = ExtResource( 2 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeDynamic_First_1_Top2"]
+material_override = ExtResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeDynamic_First_1_Top2"]
+shape = SubResource( 5 )
+
+[node name="CubeStatic_First_1_Bottom2" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.25, 5.403 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeStatic_First_1_Bottom2"]
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeStatic_First_1_Bottom2"]
+shape = SubResource( 7 )
+
+[node name="CubeStatic_First_3_Bottom2" type="StaticBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.25, 5.403 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CubeStatic_First_3_Bottom2"]
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="CubeStatic_First_3_Bottom2"]
+shape = SubResource( 7 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.881493, 0.472197, 0, -0.472197, 0.881493, -0.0866461, 2.82886, 7.47501 )
